@@ -57,3 +57,18 @@ http://www.mongodb.org/pages/viewpage.action?pageId=16646453 # bson library
 
 http://www.mongodb.org/display/DOCS/Java+Tutorial          # java tutorial
 http://www.mongodb.org/display/DOCS/Java+Language+Center   # java language center
+
+4. Enable connection by remote hosts
+
+Lastest MongoDb package on debian is bind to 127.0.0.1, this address doesn’t allow the connection by remote hosts, to change it u must set bind to 0.0.0.0 for eg
+
+nano /etc/mongodb.conf
+
+bind_ip = 0.0.0.0
+port = 27017
+
+service mongodb restart
+
+Done! Remember to secure the connection by password in production mode.
+
+http://docs.mongodb.org/manual/administration/security/#SecurityandAuthentication-Ports # security

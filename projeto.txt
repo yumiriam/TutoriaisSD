@@ -11,3 +11,7 @@ http://www.omniorb-support.com/omniwiki/
 MongoDB
 http://www.mongodb.org/
 http://www.mongodb.org/display/DOCS/Home
+
+http://stackoverflow.com/questions/4941581/very-large-soap-response-android-out-of-memory-error
+http://theopentutorials.com/tutorials/android/android-sending-object-from-one-activity-to-another-using-parcelable/
+http://developer.android.com/reference/android/os/Parcelable.html
