@@ -8,7 +8,6 @@
 	https://dl-ssl.google.com/android/eclipse/
 
 	Note: If you have trouble acquiring the plugin, you can try using "http" in the URL, instead of "https" (https is preferred for security reasons).
-	
 1. Click OK.
 1. In the Available Software view, select "Developer Tools", which will automatically select the nested tools Android DDMS and Android Development Tools.
 1. Click Next.
@@ -21,7 +20,10 @@
 1. Modify your ADT preferences in Eclipse to point to the Android SDK directory:
 1. Window > Preferences...	
 1. Select "Android"
-1. Click Browse... and locate your downloaded SDK directory. [/home/miriam/android-sdk-linux]
+1. Click Browse... and locate your downloaded SDK directory. 
+
+	Download it here: http://developer.android.com/sdk/index.html
+	[/home/miriam/android-sdk-linux]
 1. Click Apply, then OK.
 
 # Calling WS
