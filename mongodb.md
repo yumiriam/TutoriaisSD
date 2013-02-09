@@ -71,4 +71,6 @@ service mongodb restart
 
 Done! Remember to secure the connection by password in production mode.
 
+http://blog.aeonmedia.eu/2011/04/mongodb-setup-config-to-connect-by-remote-hosts-debian/
+
 http://docs.mongodb.org/manual/administration/security/#SecurityandAuthentication-Ports # security
