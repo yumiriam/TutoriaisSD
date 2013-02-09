@@ -5,7 +5,9 @@
 1. In the Add Site dialog that appears, enter a name for the remote site
 1. In the "Location" field, enter this URL:
 1. https://dl-ssl.google.com/android/eclipse/
+
 	Note: If you have trouble acquiring the plugin, you can try using "http" in the URL, instead of "https" (https is preferred for security reasons).
+	
 1. Click OK.
 1. In the Available Software view, select "Developer Tools", which will automatically select the nested tools Android DDMS and Android Development Tools.
 1. Click Next.
