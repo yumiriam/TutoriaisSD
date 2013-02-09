@@ -19,7 +19,7 @@
 
 # provide the servant object implementation
 
-> example
+## example
 
 	class Echo_i : public POA_Echo,
 		    public PortableServer::RefCountServantBase
@@ -37,7 +37,7 @@
 
 # write the client code
 
-> example
+## example
 
 	 1  void
 	 2  hello(CORBA::Object_ptr obj)
@@ -61,7 +61,7 @@
 
 # link the client and implementation
 
-> same address space
+## same address space
 
 	 1  int
 	 2  main(int argc, char **argv)
@@ -86,7 +86,7 @@
 	21    return 0;
 	22  }
 
-> different address spaces : stringfied
+## different address spaces : stringfied
 
 	 1  int main(int argc, char** argv)
 	 2  {
@@ -117,14 +117,14 @@
 
 # different address spaces : naming service
 
-> initial contact with the Naming Service established via the root context
-CORBA::ORB_ptr orb = CORBA::ORB_init(argc,argv);
+initial contact with the Naming Service established via the root context
+	CORBA::ORB_ptr orb = CORBA::ORB_init(argc,argv);
 
-CORBA::Object_var initServ;
-initServ = orb->resolve_initial_references("NameService");
+	CORBA::Object_var initServ;
+	initServ = orb->resolve_initial_references("NameService");
 
-CosNaming::NamingContext_var rootContext;
-rootContext = CosNaming::NamingContext::_narrow(initServ);
+	CosNaming::NamingContext_var rootContext;
+	rootContext = CosNaming::NamingContext::_narrow(initServ);
 
 > server-side: eg3_impl.cc
 > client-side: eg3_clt.cc

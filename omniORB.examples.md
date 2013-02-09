@@ -42,7 +42,7 @@
 
 	$ omniidl -bcxx echo.idl
 
-> omniidl é o compilador IDL
+> omniidl é o compilador IDL.
 > Com esse argumento produz o mapeamento C++ da interface.
 > São dois arquivos stub: um cabeçalho e um arquivo fonte C++ com extensões .hh e .cc
 
@@ -52,7 +52,7 @@ http://omniorb.sourceforge.net/omni40/omniORB/omniORB005.html
 
 object reference -> MyObject_ptr
 
-funções-membro estáticas da classe MyObject:
+Funções-membro estáticas da classe MyObject:
 
 * _nil()
 
@@ -98,11 +98,11 @@ Pontos importantes:
 *	multi-threading
 *	contador de referência
 
-		libera MyObject_i quando nenhuma referência a ele está sendo feita na aplicação ou no POA
+	libera MyObject_i quando nenhuma referência a ele está sendo feita na aplicação ou no POA
 
 *	instanciação
 
-		sempre usando new
+	sempre usando new
 
 # Implementação do código do cliente
 
@@ -111,24 +111,31 @@ Procurar usar as variáveis automáticas (T_ptr em vez de T_var)
 
 # Ligação entre cliente e servidor (implementação) 
 
-CORBA::ORB_init() inicializa o ORB, 3o argumento especifíca o ORB ('omniORB4')
-	lança a exceção CORBA::INITIALIZE
+* CORBA::ORB_init()
 
-orb->resolve_initial_references() obtém o POA Root, com o argumento 'RootPOA'
-	retorna um objeto CORBA::Object
+	Inicializa o ORB, 3o argumento especifíca o ORB ('omniORB4')
 	
-poa->activate_object() ativa o objeto servidor
-	retorna um objeto PortableServer::ObjectId*
+	Lança a exceção CORBA::INITIALIZE
 
-PortableServer::POAManager_var pman = poa->the_POAManager();
-pman->activate();
-	estado inicial do POA é holding, deve ser ativado com o POA Manager
+* orb->resolve_initial_references()
 
-Passando referências entre dois espaços de endereço:
+	Obtém o POA Root, com o argumento 'RootPOA'
+	Retorna um objeto CORBA::Object
+	
+* poa->activate_object() ativa o objeto servidor
+	
+	Retorna um objeto PortableServer::ObjectId*
 
-	a. versão stringified da referência
-		object_to_string() retorna a string da referência
-		string_to_object() retorna a referência da string
-		
-	b. serviço de nomes (Naming Service)
-		componentes de nome: '<id>.<kind>/MyObject.Object'
+* PortableServer::POAManager_var pman = poa->the_POAManager();
+  pman->activate();
+	
+	Estado inicial do POA é holding, deve ser ativado com o POA Manager
+
+* Passando referências entre dois espaços de endereço:
+
+a. versão stringified da referência
+	object_to_string() retorna a string da referência
+	string_to_object() retorna a referência da string
+	
+b. serviço de nomes (Naming Service)
+	componentes de nome: '<id>.<kind>/MyObject.Object'
