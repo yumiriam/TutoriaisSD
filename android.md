@@ -1,28 +1,24 @@
 # Installing the ADT Plugin for Eclipse
 
-Help > Install New Software
-
-In the Available Software dialog, click Add...
-
-In the Add Site dialog that appears, enter a name for the remote site
-
-In the "Location" field, enter this URL:
-
-https://dl-ssl.google.com/android/eclipse/
+1. Help > Install New Software
+1. In the Available Software dialog, click Add...
+1. In the Add Site dialog that appears, enter a name for the remote site
+1. In the "Location" field, enter this URL:
+1. https://dl-ssl.google.com/android/eclipse/
 
 Note: If you have trouble acquiring the plugin, you can try using "http" in the URL, instead of "https" (https is preferred for security reasons).
 
-Click OK.
+1. Click OK.
 
-In the Available Software view, select "Developer Tools", which will automatically select the nested tools Android DDMS and Android Development Tools.
+1. In the Available Software view, select "Developer Tools", which will automatically select the nested tools Android DDMS and Android Development Tools.
 
-Click Next.
+1. Click Next.
 
-In the Install Details dialog, the Android DDMS and Android Development Tools features are listed.
+1. In the Install Details dialog, the Android DDMS and Android Development Tools features are listed.
 
-Click Next to read and accept the license agreement and install any dependencies, then click Finish.
+1. Click Next to read and accept the license agreement and install any dependencies, then click Finish.
 
-Restart Eclipse.
+1. Restart Eclipse.
 
 # Configuring the ADT Plugin
 
