@@ -4,7 +4,8 @@
 1. In the Available Software dialog, click Add...
 1. In the Add Site dialog that appears, enter a name for the remote site
 1. In the "Location" field, enter this URL:
-1. https://dl-ssl.google.com/android/eclipse/
+	
+	https://dl-ssl.google.com/android/eclipse/
 
 	Note: If you have trouble acquiring the plugin, you can try using "http" in the URL, instead of "https" (https is preferred for security reasons).
 	
@@ -17,12 +18,11 @@
 
 # Configuring the ADT Plugin
 
-Modify your ADT preferences in Eclipse to point to the Android SDK directory:
-
-Window > Preferences...
-Select "Android"
-Click Browse... and locate your downloaded SDK directory. [/home/miriam/android-sdk-linux]
-Click Apply, then OK.
+1. Modify your ADT preferences in Eclipse to point to the Android SDK directory:
+1. Window > Preferences...	
+1. Select "Android"
+1. Click Browse... and locate your downloaded SDK directory. [/home/miriam/android-sdk-linux]
+1. Click Apply, then OK.
 
 # Calling WS
 
