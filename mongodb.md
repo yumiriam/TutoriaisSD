@@ -14,11 +14,11 @@ http://www.linuxfromscratch.org/blfs/view/svn/general/boost.html
 
 	Extract and go to the *boost_1_46_0* folder:
 
-	sudo ./bootstrap.sh --prefix=PREFIX where PREFIX is the directory where you want Boost.Build to be installed
-	sudo ./bjam
-	sudo ./bjam install link=shared --prefix=PREFIX --with-date_time --with-filesystem --with-program_options --with-system --with-thread
-	sudo ./bjam install link=shared --prefix=PREFIX --layout=tagged --with-date_time --with-filesystem --with-program_options --with-system --with-thread
-	--layout=tagged # configure to build multithreaded
+		sudo ./bootstrap.sh --prefix=PREFIX where PREFIX is the directory where you want Boost.Build to be installed
+		sudo ./bjam
+		sudo ./bjam install link=shared --prefix=PREFIX --with-date_time --with-filesystem --with-program_options --with-system --with-thread
+		sudo ./bjam install link=shared --prefix=PREFIX --layout=tagged --with-date_time --with-filesystem --with-program_options --with-system --with-thread
+		--layout=tagged # configure to build multithreaded
 
 	I've used:
 	
@@ -35,12 +35,12 @@ You'll need SCons, the gnu C++ toolchain, and glibc-devel. To get the code from 
 
 1. Get the source code
 
-	git clone git://github.com/mongodb/mongo.git
-	cd mongo
+		git clone git://github.com/mongodb/mongo.git
+		cd mongo
 
 1. Pick a version to build (only use "master" if you're doing development work).
 
-	git tag -l # List all tagged versions
+		git tag -l # List all tagged versions
 
 1. Check out a tagged release, e.g. 2.0.4 (stable have even-numbered minor version)
 
