@@ -92,6 +92,7 @@ Lastest MongoDb package on debian is bind to 127.0.0.1, this address doesn’t a
 		service mongodb restart
 
 Done! Remember to secure the connection by password in production mode.
+> You won't need security.
 
 > http://blog.aeonmedia.eu/2011/04/mongodb-setup-config-to-connect-by-remote-hosts-debian/
 > http://docs.mongodb.org/manual/administration/security/#SecurityandAuthentication-Ports # security
